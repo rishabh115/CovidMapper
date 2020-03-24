@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:padding="@dimen/basic_margin"
+    >
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:text="Country: "
+        android:layout_margin="@dimen/basic_margin"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textColor="#03a9f4"
+        android:layout_toRightOf="@id/tv_name_title"
+        android:layout_margin="@dimen/basic_margin"
+        tools:text="Country name"
+        />
+    <TextView
+        android:id="@+id/tv_cases_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:text="Total cases: "
+        android:layout_below="@id/tv_name_title"
+        android:layout_margin="@dimen/basic_margin"
+        />
+    <TextView
+        android:id="@+id/tv_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subtitle_size"
+        android:layout_toRightOf="@id/tv_cases_title"
+        android:layout_below="@id/tv_name_title"
+        android:layout_margin="@dimen/basic_margin"
+        tools:text="total cases"
+        />
+    <TextView
+        android:id="@+id/tv_deaths_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:text="Total deaths: "
+        android:layout_below="@id/tv_cases_title"
+        android:layout_margin="@dimen/basic_margin"
+        />
+    <TextView
+        android:id="@+id/tv_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subtitle_size"
+        android:layout_below="@id/tv_cases_title"
+        android:layout_toRightOf="@id/tv_deaths_title"
+        android:layout_margin="@dimen/basic_margin"
+        android:textColor="#cb202d"
+        tools:text="total deaths"
+        />
+    <TextView
+        android:id="@+id/tv_recovered_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_deaths_title"
+        android:text="Total recovered: "
+        android:layout_margin="@dimen/basic_margin"
+        />
+
+    <TextView
+        android:id="@+id/tv_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subtitle_size"
+        android:layout_toRightOf="@id/tv_recovered_title"
+        android:layout_below="@id/tv_deaths_title"
+        android:layout_margin="@dimen/basic_margin"
+        tools:text="Country name"
+        android:textColor="#4CAF50"
+        />
+    <TextView
+        android:id="@+id/tv_active_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:text="Active cases: "
+        android:layout_below="@id/tv_recovered_title"
+        android:layout_margin="@dimen/basic_margin"
+        />
+    <TextView
+        android:id="@+id/tv_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subtitle_size"
+        android:layout_below="@id/tv_recovered_title"
+        android:layout_toRightOf="@id/tv_active_title"
+        android:layout_margin="@dimen/basic_margin"
+        tools:text="active cases"
+    />
+    <TextView
+        android:id="@+id/tv_serious_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_active_title"
+        android:text="Serious cases: "
+        android:layout_margin="@dimen/basic_margin"
+    />
+    <TextView
+        android:id="@+id/tv_serious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subtitle_size"
+        android:layout_below="@id/tv_active_title"
+        android:layout_toRightOf="@id/tv_serious_title"
+        android:layout_margin="@dimen/basic_margin"
+        tools:text="serious cases"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

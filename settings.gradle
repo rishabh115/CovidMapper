@@ -1,0 +1,3 @@
+rootProject.name='CovidMapper'
+include ':app'
+include ':covidmapper'
