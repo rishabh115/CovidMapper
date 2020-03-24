@@ -26,7 +26,7 @@ _Follow these instructions to integrate covidmapper library in your project_
 
 ## Usage
 
- `DataParser` is the main class responsible for making the request, parsing the data and pass it down to the listener under the hood. So, you don't have write any such networking and parsing logic by yourself. To get the data in any component, just implement `DataListener` interface and call `DataParser(this).getCountriesData()` as soon as the views are ready.
+ `DataParser` is the main class responsible for making the request, parsing the data and passing it down to the listener under the hood. So, you don't have write any such networking and parsing logic by yourself. To get the data in any component, just implement `DataListener` interface and call `DataParser(this).getCountriesData()` as soon as the views are ready.
  
  Here is a simple example of using this library:
  ```kotlin
