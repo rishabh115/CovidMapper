@@ -48,8 +48,8 @@ _Follow these instructions to integrate covidmapper library in your project_
             setContentView(R.layout.activity_main)
             val someList = findViewById<RecyclerView>(R.id.rv_main)
             progress = findViewById(R.id.progress)
-            someAdapter = CovidAdapter()
-            someList.adapter = covidAdapter
+            someAdapter = SomeAdapter()
+            someList.adapter = someAdapter
             someList.layoutManager = LinearLayoutManager(this)
             progress.visibility = View.VISIBLE
             
